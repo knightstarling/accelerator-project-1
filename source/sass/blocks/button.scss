@@ -1,0 +1,10 @@
+.button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:disabled {
+    color: #c8c9cc;
+    pointer-events: none;
+  }
+}
