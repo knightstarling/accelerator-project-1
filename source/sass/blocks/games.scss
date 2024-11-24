@@ -3,17 +3,11 @@
 // }
 
 .games__container {
-  margin: 0 15px;
   color: $white;
   background-color: $red-banner;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    margin: 0 45px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0 103px;
   }
 }
 

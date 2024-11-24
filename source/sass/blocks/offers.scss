@@ -1,10 +1,16 @@
 .offers__container {
+  padding: 40px 0;
+
+  @media (max-width: calc($tablet-width - 1px)) {
+    max-width: none;
+  }
+
   @media (min-width: $tablet-width) {
-    margin: 0 45px;
+    padding: 61px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 103px;
+    padding: 100px 0;
   }
 }
 
@@ -155,17 +161,19 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 0 15px;
+  max-width: 290px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 0;
+    max-width: none;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: flex-end;
-    padding: 0;
+    max-width: none;
+    margin: 0;
   }
 }
 

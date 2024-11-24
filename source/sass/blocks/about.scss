@@ -1,4 +1,5 @@
 .about__container {
+  max-width: none;
   padding: 41px 0;
 
   @media (min-width: $tablet-width) {
@@ -13,15 +14,19 @@
 }
 
 .about__info {
+  max-width: 320px;
+  margin: 0 auto;
   padding: 0 15px;
 
   @media (min-width: $tablet-width) {
+    max-width: none;
     padding: 0 45px;
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 355px;
+    margin: 0;
     padding: 0;
   }
 }

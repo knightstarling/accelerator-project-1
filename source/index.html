@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" data-validate="html">
+<html class="page" lang="ru" data-validate="html">
 
   <head>
     <meta charset="UTF-8">
@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
-  <body class="page-body">
+  <body class="page__body">
     <!-- пример использования спрайта -->
     <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
     </svg> -->
 
-    <main class="page-body__main main">
+    <main class="page__main main">
       <section class="main__hero hero" data-test="hero">
         <div class="hero__container container">
           <header class="hero__header">
@@ -131,39 +131,37 @@
       </section>
 
       <section class="main__games games" data-test="games">
-        <div class="container">
-          <div class="games__container">
-            <div class="games__info">
-              <h2 class="games__title">SUPER GAMES</h2>
+        <div class="games__container container">
+          <div class="games__info">
+            <h2 class="games__title">SUPER GAMES</h2>
 
-              <time class="games__time" datetime="2019-03-07T12:00">
-                <div class="games__date">
-                  <h3 class="games__heading">Дата</h3>
-                  <div class="games__number-wrapper">
-                    <span class="games__number games__number--day">7</span>
-                    <span class="games__month">Марта 2019</span>
-                  </div>
-                  </time>
+            <time class="games__time" datetime="2019-03-07T12:00">
+              <div class="games__date">
+                <h3 class="games__heading">Дата</h3>
+                <div class="games__number-wrapper">
+                  <span class="games__number games__number--day">7</span>
+                  <span class="games__month">Марта 2019</span>
                 </div>
-                <div class="games__date">
-                  <h3 class="games__heading">Время</h3>
-                  <span class="games__number">12:00</span>
-                </div>
-              </time>
+                </time>
+              </div>
+              <div class="games__date">
+                <h3 class="games__heading">Время</h3>
+                <span class="games__number">12:00</span>
+              </div>
+            </time>
 
-              <p class="games__text">Ежегодные соревнования по CrossFit</p>
-              <a class="games__link" href="#">заполнить заявку</a>
-            </div>
-
-            <picture class="games__picture">
-              <source media="(min-width: 1366px)" srcset="img/games/games-desktop@1x.webp 1x, img/games/games-desktop@2x.webp 2x" width="660" height="500" type="image/webp">
-              <source media="(min-width: 768px)" srcset="img/games/games-tablet@1x.webp 1x, img/games/games-tablet@2x.webp 2x" width="378" height="348" type="image/webp">
-              <source srcset="img/games/games-mobile@1x.webp 1x, img/games/games-mobile@2x.webp 2x" width="290" height="290" type="image/webp">
-              <source media="(min-width: 1366px)" srcset="img/games/games-desktop@1x.jpg 1x, img/games/games-desktop@2x.jpg 2x" width="660" height="500" type="image/jpeg">
-              <source media="(min-width: 768px)" srcset="img/games/games-tablet@1x.jpg 1x, img/games/games-tablet@2x.jpg 2x" width="378" height="348" type="image/jpeg">
-              <img class="games__image" src="img/games/games-mobile@1x.jpg" srcset="img/games/games-mobile@2x.jpg 2x" width="290" height="290" alt="Спортсмен с разлетающимся от удара его руки мелом.">
-            </picture>
+            <p class="games__text">Ежегодные соревнования по CrossFit</p>
+            <a class="games__link" href="#">заполнить заявку</a>
           </div>
+
+          <picture class="games__picture">
+            <source media="(min-width: 1366px)" srcset="img/games/games-desktop@1x.webp 1x, img/games/games-desktop@2x.webp 2x" width="660" height="500" type="image/webp">
+            <source media="(min-width: 768px)" srcset="img/games/games-tablet@1x.webp 1x, img/games/games-tablet@2x.webp 2x" width="378" height="348" type="image/webp">
+            <source srcset="img/games/games-mobile@1x.webp 1x, img/games/games-mobile@2x.webp 2x" width="290" height="290" type="image/webp">
+            <source media="(min-width: 1366px)" srcset="img/games/games-desktop@1x.jpg 1x, img/games/games-desktop@2x.jpg 2x" width="660" height="500" type="image/jpeg">
+            <source media="(min-width: 768px)" srcset="img/games/games-tablet@1x.jpg 1x, img/games/games-tablet@2x.jpg 2x" width="378" height="348" type="image/jpeg">
+            <img class="games__image" src="img/games/games-mobile@1x.jpg" srcset="img/games/games-mobile@2x.jpg 2x" width="290" height="290" alt="Спортсмен с разлетающимся от удара его руки мелом.">
+          </picture>
         </div>
       </section>
 
@@ -234,98 +232,100 @@
       </section>
 
       <section class="main__features features" data-test="features">
-        <h2 class="features__title">Наши преимущества</h2>
+        <div class="features__container container">
+          <h2 class="features__title">Наши преимущества</h2>
 
-        <ul class="features__list">
-          <li>
-            <div>
-              <strong>900</strong>
-              <span>кв/м</span>
-            </div>
-            <div>
-              <h3>Площадь</h3>
-              <p>Занимайтесь без очередей и толкучки</p>
-            </div>
-          </li>
+          <ul class="features__list">
+            <li class="features__item">
+              <div>
+                <strong>900</strong>
+                <span>кв/м</span>
+              </div>
+              <div>
+                <h3>Площадь</h3>
+                <p>Занимайтесь без очередей и толкучки</p>
+              </div>
+            </li>
 
-          <li>
-            <div>
-              <strong>350</strong>
-              <span>мест</span>
-            </div>
-            <div>
-              <h3>Комфорт</h3>
-              <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-            </div>
-          </li>
+            <li class="features__item">
+              <div>
+                <strong>70</strong>
+                <span>машин</span>
+              </div>
+              <div>
+                <h3>Собственная парковка</h3>
+                <p>Вы всегда найдёте место для своей машины на нашей парковке</p>
+              </div>
+            </li>
 
-          <li>
-            <strong>100</strong>
-            <span>Тренажёров</span>
-            <p>Современные тренажёры на все группы мышц</p>
-          </li>
+            <li class="features__item features__item--accent">
+              <div>
+                <strong>100</strong>
+                <span>Тренажёров</span>
+              </div>
+              <p>Современные тренажёры на все группы мышц</p>
+            </li>
 
-          <li>
-            <div>
-              <strong>70</strong>
-              <span>машин</span>
-            </div>
-            <div>
-              <h3>Собственная парковка</h3>
-              <p>Вы всегда найдёте место для своей машины на нашей парковке</p>
-            </div>
-          </li>
+            <li class="features__item">
+              <div>
+                <strong>350</strong>
+                <span>мест</span>
+              </div>
+              <div>
+                <h3>Комфорт</h3>
+                <p>Просторные раздевалки, душевые, фен, Wi-Fi,&nbsp;кулеры</p>
+              </div>
+            </li>
 
-          <li>
-            <div>
-              <strong>5+</strong>
-              <span>лет</span>
-            </div>
-            <div>
-              <h3>Тренерский опыт</h3>
-              <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
-            </div>
-          </li>
-        </ul>
+            <li class="features__item">
+              <div>
+                <strong>5+</strong>
+                <span>лет</span>
+              </div>
+              <div>
+                <h3>Тренерский опыт</h3>
+                <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="main__offers offers" data-test="offers">
-        <div class="container">
-          <div class="offers__container">
-            <h2 class="offers__title">Акции</h2>
+        <div class="offers__container container">
+          <h2 class="offers__title">Акции</h2>
 
-            <div class="offers__wrapper">
-              <div class="offers__promo-wrapper">
-                <div class="offers__promo-text">
-                  <span>Год</span>
-                  <strong>4999</strong>
-                  <p>Безлимитный абонемент в тренажёрный зал</p>
-                  <a class="offers__promo-link" href="#">подробнее</a>
-                </div>
-
-                <picture class="offers__picture">
-                  <source media="(min-width: 1366px)" srcset="img/offers/offers-desktop@1x.webp 1x, img/offers/offers-desktop@2x.webp 2x" width="280" height="460" type="image/webp">
-                  <source media="(min-width: 768px)" srcset="img/offers/offers-tablet@1x.webp 1x, img/offers/offers-tablet@2x.webp 2x" width="400" height="462" type="image/webp">
-                  <source srcset="img/offers/offers-mobile@1x.webp 1x, img/offers/offers-mobile@2x.webp 2x" width="320" height="360" type="image/webp">
-                  <source media="(min-width: 1366px)" srcset="img/offers/offers-desktop@1x.jpg 1x, img/offers/offers-desktop@2x.jpg 2x" width="280" height="460" type="image/jpeg">
-                  <source media="(min-width: 768px)" srcset="img/offers/offers-tablet@1x.jpg 1x, img/offers/offers-tablet@2x.jpg 2x" width="400" height="462" type="image/jpeg">
-                  <img class="games__image" src="img/offers/offers-mobile@1x.jpg" srcset="img/offers/offers-mobile@2x.jpg 2x" width="320" height="360" alt="Спортсменка на фоне голубого неба.">
-                </picture>
+          <div class="offers__wrapper">
+            <div class="offers__promo-wrapper">
+              <div class="offers__promo-text">
+                <span>Год</span>
+                <strong>4999</strong>
+                <p>Безлимитный абонемент в тренажёрный зал</p>
+                <a class="offers__promo-link" href="#">подробнее</a>
               </div>
 
-              <ul class="offers__list">
-                <li class="offers__item">
-                  <h3>Месяц бесплатно</h3>
-                  <p>Приведи друга, получи абонемент в подарок</p>
-                  <a class="offers__option-link" href="#">подробнее</a>
-                </li>
-                <li class="offers__item">
-                  <h3>Скидка 20%</h3>
-                  <p>Корпоративный фитнес с командой</p>
-                  <a class="offers__option-link" href="#">подробнее</a>
-                </li>
-              </ul>
+              <picture class="offers__picture">
+                <source media="(min-width: 1366px)" srcset="img/offers/offers-desktop@1x.webp 1x, img/offers/offers-desktop@2x.webp 2x" width="280" height="460" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/offers/offers-tablet@1x.webp 1x, img/offers/offers-tablet@2x.webp 2x" width="400" height="462" type="image/webp">
+                <source srcset="img/offers/offers-mobile@1x.webp 1x, img/offers/offers-mobile@2x.webp 2x" width="320" height="360" type="image/webp">
+                <source media="(min-width: 1366px)" srcset="img/offers/offers-desktop@1x.jpg 1x, img/offers/offers-desktop@2x.jpg 2x" width="280" height="460" type="image/jpeg">
+                <source media="(min-width: 768px)" srcset="img/offers/offers-tablet@1x.jpg 1x, img/offers/offers-tablet@2x.jpg 2x" width="400" height="462" type="image/jpeg">
+                <img class="games__image" src="img/offers/offers-mobile@1x.jpg" srcset="img/offers/offers-mobile@2x.jpg 2x" width="320" height="360" alt="Спортсменка на фоне голубого неба.">
+              </picture>
             </div>
+
+            <ul class="offers__list">
+              <li class="offers__item">
+                <h3>Месяц бесплатно</h3>
+                <p>Приведи друга, получи абонемент в подарок</p>
+                <a class="offers__option-link" href="#">подробнее</a>
+              </li>
+              <li class="offers__item">
+                <h3>Скидка 20%</h3>
+                <p>Корпоративный фитнес с командой</p>
+                <a class="offers__option-link" href="#">подробнее</a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -410,7 +410,7 @@
               <picture>
 
               </picture>
-              <h3>Лина Шарыпина</h3>
+              <h3>Мила Булкина</h3>
               <p>
                 «Лучший спортивный клуб, по моему мнению. Приветливый персонал, в залах поддерживается чистота и имеется множество разных оборудований для тренировок — вы обязательно найдёте то, что вам нужно»
               </p>
