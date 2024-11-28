@@ -1,6 +1,14 @@
-// .games {
-//   padding: 0 15px;
-// }
+.games {
+  padding: 25px 0 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 0 100px;
+  }
+}
 
 .games__container {
   color: $white;

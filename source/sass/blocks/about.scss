@@ -1,15 +1,17 @@
 .about__container {
-  max-width: none;
-  padding: 41px 0;
+  @media (max-width: calc($tablet-width - 1px)) {
+    max-width: none;
+    padding: 41px 0;
+  }
 
   @media (min-width: $tablet-width) {
-    padding: 61px 0;
+    padding: 61px 0 119px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    padding: 120px 103px 50px;
+    padding: 120px 0 240px;
   }
 }
 
@@ -32,23 +34,14 @@
 }
 
 .about__title {
-  margin-top: 0;
   margin-bottom: 11px;
-  font-family: $font-primary;
-  font-size: 32px;
-  line-height: 32px;
-  font-weight: 600;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 19px;
-    font-size: 42px;
-    line-height: 42px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 26px;
-    font-size: 54px;
-    line-height: 54px;
     text-align: left;
   }
 }
