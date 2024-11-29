@@ -1,0 +1,74 @@
+.swiper-wrapper {
+  @include reset-list;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  display: none;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &:disabled {
+    &::after {
+      background-color: rgba(16, 38, 84, 0.3);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 18px;
+      height: 34px;
+      background-color: $dark;
+      mask-image: url("/__spritemap#sprite-arrow-view");
+      mask-repeat: no-repeat;
+      mask-size: 18px 34px;
+    }
+  }
+}
+
+.swiper-button-prev {
+  &::after {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    &--reviews {
+      left: -106px
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--reviews {
+      left: -121px
+    }
+  }
+}
+
+.swiper-button-next {
+  @media (min-width: $tablet-width) {
+    &--reviews {
+      right: -106px
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--reviews {
+      right: -121px
+    }
+  }
+}

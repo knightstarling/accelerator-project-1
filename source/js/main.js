@@ -3,3 +3,6 @@
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
 import './price-tabs.js';
+import {initReviewsSwiper} from './reviews-slider.js';
+
+initReviewsSwiper();
