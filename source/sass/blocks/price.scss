@@ -240,7 +240,6 @@
   align-items: center;
   gap: 11px;
   margin: 0;
-  // padding-right: 26px;
   font-size: 48px;
   line-height: 72px;
   font-weight: 700;
@@ -271,14 +270,12 @@
 
 .price__link {
   display: block;
-  padding: 25px;
+  padding: 27px;
   font-size: 12px;
   line-height: 12px;
   font-weight: 700;
-  color: $dark;
   text-transform: uppercase;
   text-decoration: none;
-  border: 2px solid $dark;
 
   @media (min-width: $desktop-width) {
     min-width: 230px;

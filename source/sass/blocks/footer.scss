@@ -2,6 +2,166 @@
   background-color: $black;
 }
 
+.footer__container {
+  padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 110px 413px 105px;
+    justify-content: space-between;
+    padding: 45px 0 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 130px 619px 95px;
+    padding: 40px 0 39px;
+  }
+}
+
+.footer__logo-link {
+  display: block;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
 .footer__nav-list {
   @include reset-list;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 26px;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 11px;
+    margin-top: -3px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 62.5px;
+  }
+}
+
+.footer__nav-link {
+  position: relative;
+  display: block;
+  margin-left: -10px;
+  padding: 5px 10px;
+  line-height: 20px;
+  color: $white;
+  text-decoration: none;
+
+  &:hover {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% - 20px);
+      height: 1px;
+      background-color: $white;
+    }
+  }
+
+  &:focus-visible {
+    box-shadow: inset 0 0 0 1px $white;
+    outline: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+}
+
+.footer__social-list {
+  @include reset-list;
+
+  display: grid;
+  grid-template-columns: repeat(3, 25px);
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 10px;
+  }
+}
+
+.footer__social-link {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: $white;
+  border-radius: 50%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $black;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+
+  &:hover {
+    background-color: #74819C;
+
+    &::after {
+      background-color: $white;
+    }
+  }
+
+  &:focus-visible {
+    background-color: $blue-accent;
+    outline: none;
+
+    &::after {
+      background-color: $white;
+    }
+  }
+
+  &:active {
+    background-color: $dark;
+
+    &::after {
+      background-color: $white;
+    }
+  }
+
+  &--vk {
+    &::after {
+      width: 13px;
+      height: 13px;
+      mask-image: url("/__spritemap#sprite-vk-view");
+      mask-size: 13px;
+    }
+  }
+
+  &--ok {
+    &::after {
+      width: 16px;
+      height: 16px;
+      mask-image: url("/__spritemap#sprite-ok-view");
+      mask-size: 16px;
+    }
+  }
+
+  &--reddit {
+    &::after {
+      width: 15px;
+      height: 15px;
+      mask-image: url("/__spritemap#sprite-reddit-view");
+      mask-size: 15px;
+    }
+  }
 }

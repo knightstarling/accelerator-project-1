@@ -4,14 +4,14 @@
 }
 
 .hero__container {
-  padding: 15px 0 32px;
+  padding: 9px 0 32px;
 
   @media (min-width: $tablet-width) {
-    padding: 30px 0 100px;
+    padding: 24px 0 100px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 31px 0 120px;
+    padding: 25px 0 120px;
   }
 }
 
@@ -19,23 +19,49 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 18px;
+  padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 30px;
+    padding-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 31px;
+    padding-bottom: 25px;
   }
 }
 
 .hero__phone {
+  position: relative;
+  display: inline-block;
+  padding: 6px 0;
   font-size: 22px;
   line-height: 22px;
   font-weight: 700;
   color: $white;
   text-decoration: none;
+
+  &:hover {
+    color: rgba(28, 51, 116, 0.5);
+  }
+
+  &:focus-visible {
+    color: $dark-secondary;
+    outline: none;
+  }
+
+  &:active {
+    color: $dark;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: $dark;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
@@ -162,11 +188,9 @@
   font-size: 12px;
   line-height: 12px;
   font-weight: 700;
-  color: $white;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  border: 2px solid $white;
 
   @media (min-width: $tablet-width) {
     width: 185px;
