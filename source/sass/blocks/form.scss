@@ -34,6 +34,29 @@
   }
 }
 
+.form__wrapper {
+  max-width: 290px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
+    max-width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 477px;
+
+    &--form {
+      margin-right: 0;
+      margin-left: auto;
+    }
+
+    &--contacts {
+      margin-right: auto;
+      margin-left: 0;
+    }
+  }
+}
+
 .form__title {
   margin-top: 0;
   margin-bottom: 34px;
