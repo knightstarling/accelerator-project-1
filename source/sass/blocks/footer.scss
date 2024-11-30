@@ -1,0 +1,7 @@
+.footer {
+  background-color: $black;
+}
+
+.footer__nav-list {
+  @include reset-list;
+}
