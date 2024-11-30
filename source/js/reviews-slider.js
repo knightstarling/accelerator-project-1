@@ -6,6 +6,7 @@ const initReviewsSwiper = () => {
   new Swiper('.reviews__swiper', {
     modules: [ Navigation ],
     slidesPerView: 1,
+    spaceBetween: 40,
     simulateTouch: true,
     breakpoints: {
       768: {
@@ -13,19 +14,10 @@ const initReviewsSwiper = () => {
       }
     },
     speed: 400,
-    spaceBetween: 100,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next--reviews',
+      prevEl: '.swiper-button-prev--reviews',
     },
-    injectStyles: [
-      `
-        .swiper-button-next::after,
-        .swiper-button-prev::after {
-          content: "";
-        }
-      `,
-    ],
   });
 };
 

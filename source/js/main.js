@@ -4,5 +4,7 @@
 // import 'swiper/css';
 import './price-tabs.js';
 import {initReviewsSwiper} from './reviews-slider.js';
+import {initJuriSwiper} from './juri-slider.js';
 
 initReviewsSwiper();
+initJuriSwiper();

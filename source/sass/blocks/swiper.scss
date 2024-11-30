@@ -47,12 +47,21 @@
   }
 
   @media (min-width: $tablet-width) {
+    &--juri {
+      left: -70px
+    }
+
     &--reviews {
       left: -106px
     }
   }
 
   @media (min-width: $desktop-width) {
+    &--juri {
+      top: 49%;
+      left: -69px;
+    }
+
     &--reviews {
       left: -121px
     }
@@ -61,12 +70,21 @@
 
 .swiper-button-next {
   @media (min-width: $tablet-width) {
+    &--juri {
+      right: -70px
+    }
+
     &--reviews {
       right: -106px
     }
   }
 
   @media (min-width: $desktop-width) {
+    &--juri {
+      top: 49%;
+      right: -71px;
+    }
+
     &--reviews {
       right: -121px
     }

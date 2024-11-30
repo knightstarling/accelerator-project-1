@@ -1,12 +1,12 @@
 .games {
-  padding: 25px 0 25px;
+  padding: 25px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 0 60px;
+    padding: 60px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 0 100px;
+    padding: 100px 0;
   }
 }
 

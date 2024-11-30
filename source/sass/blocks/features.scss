@@ -4,10 +4,10 @@
 
 .features__container {
   max-width: none;
-  padding: 40px 0;
+  padding: 41px 0 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 0;
+    padding: 61px 0 60px;
   }
 
   @media (min-width: $desktop-width) {

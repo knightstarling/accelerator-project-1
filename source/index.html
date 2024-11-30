@@ -76,8 +76,8 @@
               <source media="(min-width: 1366px)" srcset="img/about/about-desktop@1x.webp 1x, img/about/about-desktop@2x.webp 2x" width="660" height="400" type="image/webp">
               <source media="(min-width: 768px)" srcset="img/about/about-tablet@1x.webp 1x, img/about/about-tablet@2x.webp 2x" width="678" height="345" type="image/webp">
               <source srcset="img/about/about-mobile@1x.webp 1x, img/about/about-mobile@2x.webp 2x" width="320" height="280" type="image/webp">
-              <source media="(min-width: 1366px)" srcset="img/about/about-desktop@1x.jpg 1x, img/about/about-desktop@2x.jpg 2x" width="660" height="400" type="image/jpeg">
-              <source media="(min-width: 768px)" srcset="img/about/about-tablet@1x.jpg 1x, img/about/about-tablet@2x.jpg 2x" width="678" height="345" type="image/jpeg">
+              <source media="(min-width: 1366px)" srcset="img/about/about-desktop@1x.jpg 1x, img/about/about-desktop@2x.jpg 2x" width="660" height="400" type="image/jpg">
+              <source media="(min-width: 768px)" srcset="img/about/about-tablet@1x.jpg 1x, img/about/about-tablet@2x.jpg 2x" width="678" height="345" type="image/jpg">
               <img class="about__image" src="img/about/about-mobile@1x.jpg" srcset="img/about/about-mobile@2x.jpg 2x" width="320" height="280" alt="Тренажёрный зал.">
             </picture>
             <a class="about__link" href="#"></a>
@@ -240,77 +240,194 @@
             <source media="(min-width: 1366px)" srcset="img/games/games-desktop@1x.webp 1x, img/games/games-desktop@2x.webp 2x" width="660" height="500" type="image/webp">
             <source media="(min-width: 768px)" srcset="img/games/games-tablet@1x.webp 1x, img/games/games-tablet@2x.webp 2x" width="378" height="348" type="image/webp">
             <source srcset="img/games/games-mobile@1x.webp 1x, img/games/games-mobile@2x.webp 2x" width="290" height="290" type="image/webp">
-            <source media="(min-width: 1366px)" srcset="img/games/games-desktop@1x.jpg 1x, img/games/games-desktop@2x.jpg 2x" width="660" height="500" type="image/jpeg">
-            <source media="(min-width: 768px)" srcset="img/games/games-tablet@1x.jpg 1x, img/games/games-tablet@2x.jpg 2x" width="378" height="348" type="image/jpeg">
+            <source media="(min-width: 1366px)" srcset="img/games/games-desktop@1x.jpg 1x, img/games/games-desktop@2x.jpg 2x" width="660" height="500" type="image/jpg">
+            <source media="(min-width: 768px)" srcset="img/games/games-tablet@1x.jpg 1x, img/games/games-tablet@2x.jpg 2x" width="378" height="348" type="image/jpg">
             <img class="games__image" src="img/games/games-mobile@1x.jpg" srcset="img/games/games-mobile@2x.jpg 2x" width="290" height="290" alt="Спортсмен с разлетающимся от удара его руки мелом.">
           </picture>
         </div>
       </section>
 
       <section class="main__juri juri" data-test="juri">
-        <h2 class="juri__title title">Жюри</h2>
+        <div class="juri__container container">
+          <h2 class="juri__title">Жюри</h2>
 
-        <ul class="juri__list">
-          <li class="juri__item">
-            <picture class="juri__picture">
+          <div class="juri__swiper-container">
+            <div class="juri__swiper juri">
+              <ul class="swiper-wrapper swiper-wrapper--juri">
+                <li class="swiper-slide swiper-slide--juri">
+                  <div class="juri__slide-container">
+                    <picture class="juri__picture">
+                      <source srcset="img/juri/juri-anna@1x.webp 1x, img/juri/juri-anna@2x.webp 2x" width="260" height="300" type="image/webp">
+                      <img class="juri__image" src="img/juri/juri-anna@1x.jpg" srcset="img/juri/juri-anna@2x.jpg 2x" width="260" height="300" alt="Фото Анны Павловой.">
+                    </picture>
 
-            </picture>
+                    <div class="juri__info">
+                      <h3 class="juri__name">Анна Павлова</h3>
 
-            <h3 class="juri__name">Анна Павлова</h3>
+                      <p class="juri__specialty">Pilates</p>
 
-            <p class="juri__specialty"></p>
-            <ul class="juri__specs-list">
-              <li class="juri__specs-item"></li>
-              <li class="juri__specs-item"></li>
-              <li class="juri__specs-item"></li>
-            </ul>
-          </li>
+                      <ul class="juri__specs-list">
+                        <li class="juri__specs-item">Certified Level 5 Trainer</li>
+                        <li class="juri__specs-item">КМС по лёгкой атлетике</li>
+                        <li class="juri__specs-item">Опыт — 9 лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
 
-          <li class="juri__item">
-            <picture class="juri__picture">
+                <li class="swiper-slide juri__item">
+                  <div class="juri__slide-container">
+                    <picture class="juri__picture">
+                      <source srcset="img/juri/juri-alexey@1x.webp 1x, img/juri/juri-alexey@2x.webp 2x" width="260" height="300" type="image/webp">
+                      <img class="juri__image" src="img/juri/juri-alexey@1x.jpg" srcset="img/juri/juri-alexey@2x.jpg 2x" width="260" height="300" alt="Фото Алексей Лавров.">
+                    </picture>
 
-            </picture>
+                    <div class="juri__info">
+                      <h3 class="juri__name">Алексей Лавров</h3>
 
-            <h3 class="juri__name">Алексей Лавров</h3>
+                      <p class="juri__specialty">Weightlifting</p>
 
-            <p class="juri__specialty"></p>
-            <ul class="juri__specs-list">
-              <li class="juri__specs-item"></li>
-              <li class="juri__specs-item"></li>
-              <li class="juri__specs-item"></li>
-            </ul>
-          </li>
+                      <ul class="juri__specs-list">
+                        <li class="juri__specs-item">Certified Level 4 Trainer</li>
+                        <li class="juri__specs-item">КМС по тяжёлой атлетике</li>
+                        <li class="juri__specs-item">Опыт — 12 лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
 
-          <li class="juri__item">
-            <picture class="juri__picture">
+                <li class="swiper-slide juri__item">
+                  <div class="juri__slide-container">
+                    <picture class="juri__picture">
+                      <source srcset="img/juri/juri-alexander@1x.webp 1x, img/juri/juri-alexander@2x.webp 2x" width="260" height="300" type="image/webp">
+                      <img class="juri__image" src="img/juri/juri-alexander@1x.jpg" srcset="img/juri/juri-alexander@2x.jpg 2x" width="260" height="300" alt="Фото Александра Пашкова.">
+                    </picture>
 
-            </picture>
+                    <div class="juri__info">
+                      <h3 class="juri__name">Александр Пашков</h3>
 
-            <h3 class="juri__name">Александр Пашков</h3>
+                      <p class="juri__specialty">CrossFit</p>
 
-            <p class="juri__specialty">CrossFit</p>
-            <ul class="juri__specs-list">
-              <li class="juri__specs-item">Certified Level 3 Trainer</li>
-              <li class="juri__specs-item">Победитель чемпионата России по CrossFit </li>
-              <li class="juri__specs-item">Опыт — 6 лет</li>
-            </ul>
-          </li>
+                      <ul class="juri__specs-list">
+                        <li class="juri__specs-item">Certified Level 3 Trainer</li>
+                        <li class="juri__specs-item">Победитель чемпионата России по CrossFit</li>
+                        <li class="juri__specs-item">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
 
-          <li class="juri__item">
-            <picture class="juri__picture">
+                <li class="swiper-slide juri__item">
+                  <div class="juri__slide-container">
+                    <picture class="juri__picture">
+                      <source srcset="img/juri/juri-maria@1x.webp 1x, img/juri/juri-maria@2x.webp 2x" width="260" height="300" type="image/webp">
+                      <img class="juri__image" src="img/juri/juri-maria@1x.jpg" srcset="img/juri/juri-maria@2x.jpg 2x" width="260" height="300" alt="Фото Марии Кетовой.">
+                    </picture>
 
-            </picture>
+                    <div class="juri__info">
+                      <h3 class="juri__name">Мария Кетова</h3>
 
-            <h3 class="juri__name">Мария Кетова</h3>
+                      <p class="juri__specialty">Yoga</p>
 
-            <p class="juri__specialty"></p>
-            <ul class="juri__specs-list">
-              <li class="juri__specs-item"></li>
-              <li class="juri__specs-item"></li>
-              <li class="juri__specs-item"></li>
-            </ul>
-          </li>
-        </ul>
+                      <ul class="juri__specs-list">
+                        <li class="juri__specs-item">Certified Level 3 Trainer</li>
+                        <li class="juri__specs-item">Мастер йоги</li>
+                        <li class="juri__specs-item">Опыт — 7 лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="swiper-slide juri__item">
+                  <div class="juri__slide-container">
+                    <picture class="juri__picture">
+                      <source srcset="img/juri/juri-alexey@1x.webp 1x, img/juri/juri-alexey@2x.webp 2x" width="260" height="300" type="image/webp">
+                      <img class="juri__image" src="img/juri/juri-alexey@1x.jpg" srcset="img/juri/juri-alexey@2x.jpg 2x" width="260" height="300" alt="Фото Алексей Лавров.">
+                    </picture>
+
+                    <div class="juri__info">
+                      <h3 class="juri__name">Алексей Лавров</h3>
+
+                      <p class="juri__specialty">Weightlifting</p>
+
+                      <ul class="juri__specs-list">
+                        <li class="juri__specs-item">Certified Level 4 Trainer</li>
+                        <li class="juri__specs-item">КМС по тяжёлой атлетике</li>
+                        <li class="juri__specs-item">Опыт — 12 лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="swiper-slide swiper-slide--juri">
+                  <div class="juri__slide-container">
+                    <picture class="juri__picture">
+                      <source srcset="img/juri/juri-anna@1x.webp 1x, img/juri/juri-anna@2x.webp 2x" width="260" height="300" type="image/webp">
+                      <img class="juri__image" src="img/juri/juri-anna@1x.jpg" srcset="img/juri/juri-anna@2x.jpg 2x" width="260" height="300" alt="Фото Анны Павловой.">
+                    </picture>
+
+                    <div class="juri__info">
+                      <h3 class="juri__name">Анна Павлова</h3>
+
+                      <p class="juri__specialty">Pilates</p>
+
+                      <ul class="juri__specs-list">
+                        <li class="juri__specs-item">Certified Level 5 Trainer</li>
+                        <li class="juri__specs-item">КМС по лёгкой атлетике</li>
+                        <li class="juri__specs-item">Опыт — 9 лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="swiper-slide juri__item">
+                  <div class="juri__slide-container">
+                    <picture class="juri__picture">
+                      <source srcset="img/juri/juri-maria@1x.webp 1x, img/juri/juri-maria@2x.webp 2x" width="260" height="300" type="image/webp">
+                      <img class="juri__image" src="img/juri/juri-maria@1x.jpg" srcset="img/juri/juri-maria@2x.jpg 2x" width="260" height="300" alt="Фото Марии Кетовой.">
+                    </picture>
+
+                    <div class="juri__info">
+                      <h3 class="juri__name">Мария Кетова</h3>
+
+                      <p class="juri__specialty">Yoga</p>
+
+                      <ul class="juri__specs-list">
+                        <li class="juri__specs-item">Certified Level 3 Trainer</li>
+                        <li class="juri__specs-item">Мастер йоги</li>
+                        <li class="juri__specs-item">Опыт — 7 лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="swiper-slide juri__item">
+                  <div class="juri__slide-container">
+                    <picture class="juri__picture">
+                      <source srcset="img/juri/juri-alexander@1x.webp 1x, img/juri/juri-alexander@2x.webp 2x" width="260" height="300" type="image/webp">
+                      <img class="juri__image" src="img/juri/juri-alexander@1x.jpg" srcset="img/juri/juri-alexander@2x.jpg 2x" width="260" height="300" alt="Фото Александра Пашкова.">
+                    </picture>
+
+                    <div class="juri__info">
+                      <h3 class="juri__name">Александр Пашков</h3>
+
+                      <p class="juri__specialty">CrossFit</p>
+
+                      <ul class="juri__specs-list">
+                        <li class="juri__specs-item">Certified Level 3 Trainer</li>
+                        <li class="juri__specs-item">Победитель чемпионата России по CrossFit</li>
+                        <li class="juri__specs-item">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <button class="swiper-button-prev swiper-button-prev--juri" type="button" aria-label="Предыдущий слайд."></button>
+            <button class="swiper-button-next swiper-button-next--juri" type="button" aria-label="Следующий слайд."></button>
+          </div>
+        </div>
       </section>
 
       <section class="main__features features" data-test="features">
@@ -390,9 +507,9 @@
                 <source media="(min-width: 1366px)" srcset="img/offers/offers-desktop@1x.webp 1x, img/offers/offers-desktop@2x.webp 2x" width="280" height="460" type="image/webp">
                 <source media="(min-width: 768px)" srcset="img/offers/offers-tablet@1x.webp 1x, img/offers/offers-tablet@2x.webp 2x" width="400" height="462" type="image/webp">
                 <source srcset="img/offers/offers-mobile@1x.webp 1x, img/offers/offers-mobile@2x.webp 2x" width="320" height="360" type="image/webp">
-                <source media="(min-width: 1366px)" srcset="img/offers/offers-desktop@1x.jpg 1x, img/offers/offers-desktop@2x.jpg 2x" width="280" height="460" type="image/jpeg">
-                <source media="(min-width: 768px)" srcset="img/offers/offers-tablet@1x.jpg 1x, img/offers/offers-tablet@2x.jpg 2x" width="400" height="462" type="image/jpeg">
-                <img class="games__image" src="img/offers/offers-mobile@1x.jpg" srcset="img/offers/offers-mobile@2x.jpg 2x" width="320" height="360" alt="Спортсменка на фоне голубого неба.">
+                <source media="(min-width: 1366px)" srcset="img/offers/offers-desktop@1x.jpg 1x, img/offers/offers-desktop@2x.jpg 2x" width="280" height="460" type="image/jpg">
+                <source media="(min-width: 768px)" srcset="img/offers/offers-tablet@1x.jpg 1x, img/offers/offers-tablet@2x.jpg 2x" width="400" height="462" type="image/jpg">
+                <img class="offers__image" src="img/offers/offers-mobile@1x.jpg" srcset="img/offers/offers-mobile@2x.jpg 2x" width="320" height="360" alt="Спортсменка на фоне голубого неба.">
               </picture>
             </div>
 
@@ -469,16 +586,17 @@
       <section class="main__reviews reviews" data-test="reviews">
         <div class="reviews__container container">
           <h2 class="reviews__title title">Отзывы</h2>
+
           <div class="reviews__swiper-container">
             <div class="reviews__swiper swiper">
               <ul class="swiper-wrapper swiper-wrapper--reviews">
                 <li class="swiper-slide swiper-slide--reviews">
                   <div class="reviews__slide-container">
                     <picture>
-                      <source media="(min-width: 768px)" srcset="img/reviews/review-1-tablet@1x.webp 1x, img/reviews/review-1-tablet@2x.webp 2x" width="80" height="80" type="image/webp">
-                      <source srcset="img/reviews/review-1-tablet@1x.webp 1x, img/reviews/review-1-tablet@2x.webp 2x" width="68" height="68" type="image/webp">
-                      <source media="(min-width: 768px)" srcset="img/reviews/review-1-mobile@1x.png 1x, img/reviews/review-1-mobile@2x.png 2x" width="80" height="80" type="image/png">
-                      <img class="reviews__image" src="img/reviews/review-1-mobile@1x.png" srcset="img/reviews/review-1-mobile@2x.png 2x" width="68" height="68" alt="Фото Анны Орловой.">
+                      <source media="(min-width: 768px)" srcset="img/reviews/review-anna-tablet@1x.webp 1x, img/reviews/review-anna-tablet@2x.webp 2x" width="80" height="80" type="image/webp">
+                      <source srcset="img/reviews/review-anna-tablet@1x.webp 1x, img/reviews/review-anna-tablet@2x.webp 2x" width="68" height="68" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="img/reviews/review-anna-mobile@1x.png 1x, img/reviews/review-anna-mobile@2x.png 2x" width="80" height="80" type="image/png">
+                      <img class="reviews__image" src="img/reviews/review-anna-mobile@1x.png" srcset="img/reviews/review-anna-mobile@2x.png 2x" width="68" height="68" alt="Фото Анны Орловой.">
                     </picture>
                     <h3>Анна Орлова</h3>
                     <p>
@@ -489,10 +607,10 @@
                 <li class="swiper-slide swiper-slide--reviews">
                   <div class="reviews__slide-container">
                     <picture>
-                      <source media="(min-width: 768px)" srcset="img/reviews/review-2@1x.webp 1x, img/reviews/review-2@2x.webp 2x" width="80" height="80" type="image/webp">
-                      <source srcset="img/reviews/review-2@1x.webp 1x, img/reviews/review-2@2x.webp 2x" width="68" height="68" type="image/webp">
-                      <source media="(min-width: 768px)" srcset="img/reviews/review-2@1x.png 1x, img/reviews/review-2@2x.png 2x" width="80" height="80" type="image/png">
-                      <img class="reviews__image" src="img/reviews/review-2@1x.png" srcset="img/reviews/review-2@2x.png 2x" width="68" height="68" alt="Фото Чхве Субина.">
+                      <source media="(min-width: 768px)" srcset="img/reviews/review-soobin@1x.webp 1x, img/reviews/review-soobin@2x.webp 2x" width="80" height="80" type="image/webp">
+                      <source srcset="img/reviews/review-soobin@1x.webp 1x, img/reviews/review-soobin@2x.webp 2x" width="68" height="68" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="img/reviews/review-soobin@1x.png 1x, img/reviews/review-soobin@2x.png 2x" width="80" height="80" type="image/png">
+                      <img class="reviews__image" src="img/reviews/review-soobin@1x.png" srcset="img/reviews/review-soobin@2x.png 2x" width="68" height="68" alt="Фото Чхве Субина.">
                     </picture>
                     <h3>Чхве Субин</h3>
                     <p>
@@ -503,10 +621,10 @@
                 <li class="swiper-slide swiper-slide--reviews">
                   <div class="reviews__slide-container">
                     <picture>
-                      <source media="(min-width: 768px)" srcset="img/reviews/review-3@1x.webp 1x, img/reviews/review-3@2x.webp 2x" width="80" height="80" type="image/webp">
-                      <source srcset="img/reviews/review-3@1x.webp 1x, img/reviews/review-3@2x.webp 2x" width="68" height="68" type="image/webp">
-                      <source media="(min-width: 768px)" srcset="img/reviews/review-3@1x.png 1x, img/reviews/review-3@2x.png 2x" width="80" height="80" type="image/png">
-                      <img class="reviews__image" src="img/reviews/review-3@1x.png" srcset="img/reviews/review-3@2x.png 2x" width="68" height="68" alt="Фото Милы Булкиной.">
+                      <source media="(min-width: 768px)" srcset="img/reviews/review-mila@1x.webp 1x, img/reviews/review-mila@2x.webp 2x" width="80" height="80" type="image/webp">
+                      <source srcset="img/reviews/review-mila@1x.webp 1x, img/reviews/review-mila@2x.webp 2x" width="68" height="68" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="img/reviews/review-mila@1x.png 1x, img/reviews/review-mila@2x.png 2x" width="80" height="80" type="image/png">
+                      <img class="reviews__image" src="img/reviews/review-mila@1x.png" srcset="img/reviews/review-mila@2x.png 2x" width="68" height="68" alt="Фото Милы Булкиной.">
                     </picture>
                     <h3>Мила Булкина</h3>
                     <p>

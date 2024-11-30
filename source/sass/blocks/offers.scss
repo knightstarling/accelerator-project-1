@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 61px 0;
+    padding: 61px 0 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -143,6 +143,13 @@
     &::after {
       bottom: -1px;
     }
+  }
+}
+
+.offers__image {
+  @media (max-width: calc($tablet-width - 1px)) {
+    width: 100%;
+    object-fit: cover
   }
 }
 
