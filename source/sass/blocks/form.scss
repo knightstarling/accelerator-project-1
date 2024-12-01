@@ -89,7 +89,7 @@
 .form__input-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 36px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -103,9 +103,7 @@
 }
 
 .form__field {
-  @media (min-width: $tablet-width) {
-
-  }
+  position: relative;
 }
 
 .form__input {
@@ -115,7 +113,7 @@
   color: $white;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #74819C;
+  box-shadow: 0 1px 0 0 #74819C;
 
   &::placeholder {
     font-weight: 300;
@@ -126,11 +124,35 @@
       font-weight: 400;
     }
   }
+
+  &:hover {
+    box-shadow: 0 1px 0 0 $white;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 1px $white;
+    outline: none;
+  }
+
+  &--error {
+    box-shadow: 0 1px 0 0 $red-error;
+  }
+}
+
+.form__error {
+  display: none;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: $red-error;
 }
 
 .form__button {
   width: 100%;
-  margin-top: 36px;
+  margin-top: 37px;
   padding: 22px;
   font-size: 12px;
   line-height: 12px;
@@ -140,7 +162,7 @@
   border: 2px solid $white;
 
   @media (min-width: $tablet-width) {
-    margin-top: 35px;
+    margin-top: 36px;
     padding: 26px 25px 24px;
   }
 }

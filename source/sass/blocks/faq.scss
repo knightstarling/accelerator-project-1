@@ -2,10 +2,250 @@
   background-color: $white-secondary;
 }
 
-.faq__title {
-  text-align: center;
+.faq__container {
+  padding: 71px 0 70px;
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 0;
+  }
 
   @media (min-width: $desktop-width) {
+    padding: 100px 0 100px;
+  }
+}
+
+.faq__title {
+  margin-bottom: 34px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 49px;
     text-align: left;
+  }
+}
+
+.faq__tabs {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 260px 860px;
+    gap: 40px;
+  }
+}
+
+.faq__button-list {
+  @include reset-list;
+
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  gap: 10px;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(4, 162px);
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px;
+    margin-bottom: 0;
+  }
+}
+
+.faq__button {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 18px 16px;
+  }
+}
+
+.faq__info-list {
+  @include reset-list;
+
+  &:not(.faq__info-list--show) {
+    display: none;
+  }
+}
+
+.faq__info-item {
+  padding: 20px 0;
+  border-top: 1px solid #74819c;
+
+  &:last-child {
+    border-bottom: 1px solid #74819c;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 24px 0 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 23px 0 22px;
+  }
+}
+
+.faq__info-item div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq__info-item h3 {
+  max-width: 238px;
+  margin: 0;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    max-width: 500px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 660px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.faq__info-button {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: $white;
+  border-radius: 50%;
+  border: 1px solid $dark-secondary;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 14px;
+    width: 1px;
+    background-color: $dark-secondary;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: $dark-secondary;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 1px;
+  }
+
+  &:hover {
+    background-color: $dark-secondary;
+
+    &::after,
+    &::before {
+      background-color: $white;
+    }
+  }
+
+  &:focus-visible {
+    background-color: #74819c;
+    outline: none;
+
+    &::after,
+    &::before {
+      background-color: $white;
+    }
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+
+    &::before {
+      height: 20px;
+    }
+
+    &::after {
+      width: 20px;
+    }
+  }
+}
+
+.faq__info-item p {
+  max-width: 238px;
+  max-height: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  transition: all 0.7s;
+  opacity: 0;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    max-width: 560px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 660px;
+  }
+}
+
+.faq__info-item--active {
+  & .faq__info-button {
+    background-color: $dark-secondary;
+  }
+
+  & .faq__info-button::before {
+    display: none;
+  }
+
+  & .faq__info-button::after {
+    background-color: $white;
+  }
+}
+
+.faq__info-item--active p {
+  max-height: 150px;
+  margin-top: 20px;
+  opacity: 1;
+  transition: all 0.7s;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 23px;
   }
 }

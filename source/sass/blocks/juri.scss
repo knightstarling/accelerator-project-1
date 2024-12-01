@@ -42,6 +42,10 @@
   position: relative;
   max-width: 260px;
   color: $white;
+
+  &:focus-visible {
+    outline: none;
+  }
 }
 
 .juri__info {

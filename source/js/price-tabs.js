@@ -1,4 +1,4 @@
-const showTabs = (tabButton) => {
+const showPriceTabs = (tabButton) => {
   const tabs = tabButton.closest('.price__tabs');
   if (tabButton.classList.contains('price__button--active')) {
     return;
@@ -22,5 +22,5 @@ document.addEventListener('click', (evt) => {
     return;
   }
   const tabButton = evt.target.closest('.price__button');
-  showTabs(tabButton);
+  showPriceTabs(tabButton);
 });
