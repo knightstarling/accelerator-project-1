@@ -69,11 +69,11 @@
 
   @media (min-width: $tablet-width) {
     &--juri {
-      left: -70px
+      left: -70px;
     }
 
     &--reviews {
-      left: -106px
+      left: -106px;
     }
   }
 
@@ -84,21 +84,19 @@
     }
 
     &--reviews {
-      left: -121px
+      left: -121px;
     }
   }
 }
 
 .swiper-button-next {
-
-
   @media (min-width: $tablet-width) {
     &--juri {
-      right: -70px
+      right: -70px;
     }
 
     &--reviews {
-      right: -106px
+      right: -106px;
     }
   }
 
@@ -109,7 +107,7 @@
     }
 
     &--reviews {
-      right: -121px
+      right: -121px;
     }
   }
 }

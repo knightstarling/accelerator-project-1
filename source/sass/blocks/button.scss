@@ -36,7 +36,7 @@
 
     &:hover {
       color: $white;
-      background-image: linear-gradient(97.05deg, $red-banner 17.6%, #003EB7 95.31%);
+      background-image: linear-gradient(97.05deg, $red-banner 17.6%, #003eb7 95.31%);
       border: none;
     }
 
@@ -49,7 +49,7 @@
 
     &:active {
       color: rgba(255, 255, 255, 0.7);
-      background-image: linear-gradient(97.05deg, $red-banner 17.6%, #003EB7 95.31%);
+      background-image: linear-gradient(97.05deg, $red-banner 17.6%, #003eb7 95.31%);
       box-shadow: none;
     }
   }
@@ -81,7 +81,7 @@
 
   &:active {
     color: $white;
-    background-image: linear-gradient(97.05deg, $red-banner 17.6%, #003EB7 95.31%);
+    background-image: linear-gradient(97.05deg, $red-banner 17.6%, #003eb7 95.31%);
   }
 
   &:disabled {
@@ -91,6 +91,6 @@
 
   &--active {
     color: $white;
-    background-image: linear-gradient(97.05deg, $red-banner 17.6%, #003EB7 95.31%);
+    background-image: linear-gradient(97.05deg, $red-banner 17.6%, #003eb7 95.31%);
   }
 }

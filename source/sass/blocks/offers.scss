@@ -1,7 +1,7 @@
 .offers__container {
   padding: 40px 0;
 
-  @media (max-width: calc($tablet-width - 1px)) {
+  @media (width <= calc($tablet-width - 1px)) {
     max-width: none;
   }
 
@@ -167,9 +167,9 @@
 }
 
 .offers__image {
-  @media (max-width: calc($tablet-width - 1px)) {
+  @media (width <= calc($tablet-width - 1px)) {
     width: 100%;
-    object-fit: cover
+    object-fit: cover;
   }
 }
 
@@ -183,7 +183,7 @@
   margin: 0 auto;
   color: $dark-secondary;
 
-  @media (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
+  @media (min-width: $tablet-width) and (width <= calc($desktop-width - 1px)) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: none;

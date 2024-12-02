@@ -1,7 +1,7 @@
 .about__container {
   position: relative;
 
-  @media (max-width: calc($tablet-width - 1px)) {
+  @media (width <= calc($tablet-width - 1px)) {
     max-width: none;
     padding: 41px 0 40px;
   }
@@ -131,7 +131,7 @@
   transform: translate(-50%, -50%);
   width: 52px;
   height: 52px;
-  background-image: linear-gradient(97.05deg, $red-banner 17.6%, #003EB7 95.31%);
+  background-image: linear-gradient(97.05deg, $red-banner 17.6%, #003eb7 95.31%);
   border-radius: 50%;
 
   &::before {
