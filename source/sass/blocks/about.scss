@@ -1,7 +1,9 @@
 .about__container {
+  position: relative;
+
   @media (max-width: calc($tablet-width - 1px)) {
     max-width: none;
-    padding: 41px 0;
+    padding: 41px 0 40px;
   }
 
   @media (min-width: $tablet-width) {
@@ -91,7 +93,6 @@
 }
 
 .about__media-wrapper {
-  position: relative;
   margin-top: 35px;
 
   @media (min-width: $tablet-width) {
@@ -104,6 +105,153 @@
 }
 
 .about__image {
-  display: block;
   margin: 0 auto;
+}
+
+.about__video-wrapper {
+  position: relative;
+  margin-top: 36px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 34px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 125px;
+  }
+}
+
+.about__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 52px;
+  height: 52px;
+  background-image: linear-gradient(97.05deg, $red-banner 17.6%, #003EB7 95.31%);
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 72px;
+    height: 72px;
+    border: 2px solid rgba(237, 2, 51, 0.2);
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+    background-color: $white;
+    mask-image: url("/__spritemap#sprite-play-view");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 15px;
+  }
+
+  &:hover {
+    background-image: none;
+    background-color: $white;
+
+    &::before {
+      border-color: rgba(16, 38, 84, 0.6);
+    }
+
+    &::after {
+      background-color: rgba(16, 38, 84, 0.6);
+    }
+  }
+
+  &:focus-visible {
+    background-image: none;
+    background-color: #c8c9cc;
+    outline: none;
+
+    &::before {
+      border-color: $dark;
+    }
+
+    &::after {
+      background-color: $dark;
+    }
+  }
+
+  &:active {
+    background-image: none;
+    background-color: $white;
+
+    &::before {
+      border-color: $dark;
+    }
+
+    &::after {
+      background-color: $dark;
+    }
+  }
+
+  &:disabled {
+    background-image: none;
+    background-color: $white;
+    opacity: 0.4;
+
+    &::before {
+      border-color: $dark;
+    }
+
+    &::after {
+      background-color: $dark;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 72px;
+    height: 72px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+    }
+
+    &::after {
+      left: 53%;
+      width: 22px;
+      height: 22px;
+      mask-size: 22px;
+    }
+  }
+}
+
+.about__video-preview {
+  margin: 0 auto;
+}
+
+.about__video {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  width: 320px;
+  height: 170px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 270px;
+    height: 170px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+    height: 230px;
+  }
 }

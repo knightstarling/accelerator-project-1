@@ -243,8 +243,18 @@
   font-style: normal;
 
   &--link {
-    display: block;
+    display: inline-block;
     color: $dark;
     text-decoration: none;
+
+    &:hover,
+    &:active {
+      box-shadow: 0 1px 0 0 $dark;
+    }
+
+    &:focus-visible {
+      box-shadow: 0 0 0 1px $dark;
+      outline: none;
+    }
   }
 }
